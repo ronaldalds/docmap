@@ -14,8 +14,8 @@ const posts = [
       role: 'Web Developer'
     },
     content: [
-      {type: "paragraph", content: "lorem ipsum dolor lore"},
-      {type: "paragraph", content: "lorem ipsum dolor lore"},
+      {type: "paragraph", content: "lorem ipsum dolor lorea"},
+      {type: "paragraph", content: "lorem ipsum dolor lorewrtw3"},
       {type: "link", content: "devejs"},
       {type: "link", content: "deveNodeJS"},
     ],
@@ -29,8 +29,8 @@ const posts = [
       role: 'Comeciante'
     },
     content: [
-      {type: "paragraph", content: "lorem ipsum dolor lore"},
-      {type: "paragraph", content: "lorem ipsum dolor lore"},
+      {type: "paragraph", content: "lorem ipsum dolor lored"},
+      {type: "paragraph", content: "lorem ipsum dolor loresxv"},
       {type: "link", content: "farmácia"},
       {type: "link", content: "Loja"},
     ],
@@ -50,6 +50,7 @@ export function App() {
           {posts.map(post => {
             return (
             <Post
+              key={post.id}
               author={post.author}
               content={post.content}
               published_at={post.published_at}
